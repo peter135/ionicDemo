@@ -13,6 +13,8 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "~8.1.2",
+    "@angular/cdk": "~8.2.3",
     "@angular/common": "~11.0.5",
     "@angular/core": "~11.0.5",
     "@angular/forms": "~11.0.5",
@@ -21,6 +23,7 @@
     "@angular/router": "~11.0.5",
     "@capacitor/core": "2.4.6",
     "@ionic/angular": "^5.5.2",
+    "@angular/material": "^8.2.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

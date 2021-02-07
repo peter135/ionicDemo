@@ -1,0 +1,7 @@
+<ion-list>
+  <ng-container *ngFor="let menu of moreMenu">
+    <ion-item button (click)="clickMenu(menu)">
+      <ion-label>{{menu.title}}</ion-label>
+    </ion-item>
+  </ng-container>
+</ion-list>

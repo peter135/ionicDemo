@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <button  mat-icon-button slot="end" [disabled]="false"
+        (click)="menuFunction()">
+        <ion-icon size="large" name="menu"></ion-icon>
+      </button>
+      <!-- <button *ngIf="isBack" mat-icon-button slot="end" (click)="backFunction()">
+        <div class="icon">
+          <mat-icon [inline]="true">chevron_left</mat-icon>
+        </div>
+      </button> -->
+    </ion-buttons>
+    <ion-title class="ion-text-center">{{title}}</ion-title>
+    <ion-buttons slot="end">
+      <!-- <button *ngIf="isEditMenu" mat-icon-button slot="start" (click)="editFunction($event)">
+        <ion-icon size="large" name="create"></ion-icon>
+      </button> -->
+      <button  mat-icon-button slot="end" [disabled]="false"
+        (click)="moreMenuFunction($event)">
+        <ion-icon size="large" name="ellipsis-vertical-outline"></ion-icon>      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>

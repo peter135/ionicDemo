@@ -1,0 +1,14 @@
+<div class="loadWrapper" *ngIf="isLoading">
+  <div class="loader-inner line-spin-fade-loader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="title">{{title}}</div>
+  <button class="cancel" mat-raised-button routerLink="/" (click)="goBack()">{{cancel}}</button>
+</div>

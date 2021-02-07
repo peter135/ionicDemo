@@ -1,0 +1,26 @@
+<app-head></app-head>
+<div class="breadcrumb">
+  <div class="strLimmit">{{title}}</div>
+</div>
+
+<ion-content class="padding-center">
+  <div class="list-container">
+      <ion-list>
+        <ion-item-divider sticky>
+          <ion-icon name="layers-outline" slot="start" class="list-title-icon"></ion-icon>
+          <ng-container>
+            <ion-label>{{title}}</ion-label>
+          </ng-container>
+        </ion-item-divider>
+        <ion-item *ngFor="let detail of list">
+          <ion-icon name="layers-outline" slot="start"></ion-icon>
+          <ng-container>
+            <ion-label (click)="clickItem(building)">
+             {{detail.name}}<br />{{detail.address}}
+            </ion-label>
+          </ng-container>
+        </ion-item>
+      </ion-list>
+  </div>
+</ion-content>
+<app-footer></app-footer>
